@@ -273,6 +273,7 @@ p {
 
   .hero__description {
     font-size: 1.3rem;
+    line-height: 2rem;
   }
 
   .section__elements{
@@ -284,11 +285,6 @@ p {
   
   .reverse {
     flex-direction: column-reverse;
-  }
-
-  .hero__description {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
   }
 
   .logo {
