@@ -220,6 +220,32 @@ p {
   text-align: center;
 }
 
+.contact__block {
+  background-color: var(--Blue);
+  height: 100%;
+  padding: 5rem;
+}
+
+.input__text {
+  padding: 1.7rem 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  font-size: 1.4rem;
+  outline: none;
+  border: none;
+}
+
+.input__btn {
+  background-color: rgb(0, 110, 255);
+  border: 2px solid white;
+  color: white;
+  font-size: 1.7rem;
+  padding: 2rem 5rem;
+  outline: none;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
 
 @media screen and (min-width:768px) {
 
@@ -245,7 +271,8 @@ p {
     font-size: 3.5rem;
   }
 
-  .section {
+  .hero__description {
+    font-size: 1.3rem;
   }
 
   .section__elements{
