@@ -313,6 +313,18 @@ p {
   cursor: pointer;
 }
 
+.thank{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.email {
+  height: 20rem;
+  width: 20rem;
+}
 
 
 @media screen and (min-width:768px) {
