@@ -18,6 +18,7 @@
   --color-body-bg: #272730; 
   --color-aside-bg: #202029;
   --color-aside-img-bg: #2a2a31;
+  --color-scroolbar: rgb(136, 136, 136);
   --color-card-bg: #6a68687e;
 }
 
@@ -37,6 +38,7 @@ html {
 h1, h2, h3, h4 {
   color: var(--color-heading);
   transition: all .5s;
+  display: inline-block;
 }
  
 h2:hover {
@@ -198,12 +200,18 @@ section:not(:last-child) {
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
-  transition: all .5s;
+  transition: all 5s;
 }
 
 .project-link:hover {
   text-decoration: none;
   transition: all 5s;
+}
+
+.project-link:hover::before {
+  content: '< ';
+  color: var(--color-gold);
+  font-weight: 700;
 }
 
 .project-link:hover:after {
@@ -212,11 +220,6 @@ section:not(:last-child) {
   font-weight: 700;
 }
 
-.project-link:hover::before {
-  content: '< ';
-  color: var(--color-gold);
-  font-weight: 700;
-}
 
 @media screen and (min-width: 700px) {
   .project-coll {
@@ -287,6 +290,17 @@ section:not(:last-child) {
   left: -30rem;
   z-index: 2;
   transition: all .6s;
+}
+
+.aside-content::-webkit-scrollbar {
+  background: transparent;
+  width: .3rem;
+  border-radius: 3rem;
+}
+
+.aside-content::-webkit-scrollbar-thumb {
+  background: var(--color-scroolbar);
+  border-radius: 1rem;
 }
 
 .profile-content {
