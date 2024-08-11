@@ -74,7 +74,7 @@ p {
 }
 
 .btn-close{
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: absolute;
   right: 2rem;
   top: 1rem;
@@ -84,7 +84,7 @@ p {
 }
 
 .btn-open {
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: rgb(242, 240, 240);
   cursor: pointer; 
   transition: all .5s;
@@ -97,7 +97,7 @@ p {
 
 .time-now,
 .date-now {
-  font-size: 1.5rem; 
+  font-size: 1.2rem; 
   color: white;
   transition: all .5s;
 }
@@ -124,6 +124,7 @@ p {
 body {
   background-color: var(--color-body-bg);
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  position: relative; 
 }
 
 main {
@@ -140,8 +141,10 @@ main {
 
 
 .overlay {
+  top: 0;
+  left: 0;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   background-color: #000000d8;
   position: absolute;
 }
@@ -166,6 +169,55 @@ section:not(:last-child) {
   text-align: center;
   padding: 2rem;
 }
+
+/* PROJECTS */
+
+.project-item {
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
+  box-shadow: 0 1rem 1rem rgb(39, 39, 39);
+  background-color: var(--color-card-bg);
+  transition: all .5s;
+  margin-top: 3rem;
+}
+
+.project-item:hover{
+  transform: scale(1.02);
+}
+
+.project-image {
+  width: 100%;
+}
+
+.project-title {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.project-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: all .5s;
+}
+
+.project-link:hover {
+  text-decoration: none;
+  transition: all 5s;
+}
+
+.project-link:hover:after {
+  content: ' />';
+  color: var(--color-gold);
+  font-weight: 700;
+}
+
+.project-link:hover::before {
+  content: '< ';
+  color: var(--color-gold);
+  font-weight: 700;
+}
+
 
 
 /* CARDS */
@@ -237,7 +289,6 @@ section:not(:last-child) {
 .cv {
   margin-top: 2rem; 
 }
-
 
 
 /* SOCIAL LINKS */
@@ -348,5 +399,10 @@ section:not(:last-child) {
 
   .social-links {
     font-size: 2rem;
+  }
+
+  .time-now,
+  .date-now {
+    font-size: 1.5rem; 
   }
 }
