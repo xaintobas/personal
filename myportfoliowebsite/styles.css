@@ -38,33 +38,32 @@ h1, h2, h3, h4 {
   color: var(--color-heading);
   transition: all .5s;
 }
-
-h1:hover, 
+ 
 h2:hover {
   color: var(--color-gold);
 }
 
 h1 {
-  font-size: 4rem;
-  margin-bottom: 2rem;
+  font-size: 1.6rem; 
+  margin-bottom: 1.4rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-bottom: 1rem;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 p {
-  font-size: 1.7rem;
-  line-height: 3rem;
+  font-size: 1.2rem;
+  line-height: 2.3rem;
   color: var(--color-p);
 }
 
@@ -108,10 +107,11 @@ p {
   color: var(--color-gold);
 }
 
-
 .hero-description {
   font-family: 'Space Mono', 'Courier New', Courier, monospace;
   font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
 }
 
 .gold-cl {
@@ -127,7 +127,7 @@ body {
 }
 
 main {
-  padding: 0 4rem 4rem 4rem; 
+  padding: 0 2rem 4rem 2rem; 
 }
 
 .top-icon {
@@ -147,7 +147,7 @@ main {
 }
 
 section {
-  margin-top: 5rem;
+  margin-top: 2.5rem;
 }
 
 section:not(:last-child) {
@@ -162,7 +162,7 @@ section:not(:last-child) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
+  min-height: 30vh;
   text-align: center;
   padding: 2rem;
 }
@@ -174,7 +174,7 @@ section:not(:last-child) {
   background-color: var(--color-card-bg);
   border-radius: 1rem;
   box-shadow: 0 1rem 1rem rgb(39, 39, 39);
-  padding: 3rem;
+  padding: 2rem;
   transition: all .5s;
 }
 
@@ -247,16 +247,21 @@ section:not(:last-child) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .social {
   margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .social-links {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-size: 2rem;
+  font-size: 1.2rem;
   display: inline-block;
   transition: all .5s;
 }
@@ -278,12 +283,56 @@ section:not(:last-child) {
 
 @media screen and (min-width: 50rem) {
 
+  /* TYPOGRAPHY */
 
-
-  main {
-    margin-left: 30rem;
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  
+  h2 {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 1.7rem;
+    line-height: 3rem;
+    color: var(--color-p);
   }
 
+
+  /* LAYOUT */
+
+  .hero-description {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  
+  main {
+    margin-left: 30rem;
+    padding: 0 4rem 4rem 4rem; 
+  }
+
+  section {
+    margin-top: 5rem;
+  }
+
+  .hero {
+    min-height: 50vh;
+  }
+
+  .card{
+    padding: 3rem;
+  }
 
   .aside-content {
     left: 0rem;
@@ -295,5 +344,9 @@ section:not(:last-child) {
 
   .btn-open {
     display: none;
+  }
+
+  .social-links {
+    font-size: 2rem;
   }
 }
