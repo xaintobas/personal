@@ -38,10 +38,13 @@ html {
 h1, h2, h3, h4 {
   color: var(--color-heading);
   transition: all .5s;
+}
+
+h1, h2, h3 {
   display: inline-block;
 }
  
-h2:hover {
+h1:hover, h2:hover {
   color: var(--color-gold);
 }
 
@@ -61,6 +64,21 @@ h3 {
 
 h4 {
   font-size: 1.4rem;
+}
+
+h4 a {
+  text-decoration: none;
+  color: rgb(143, 143, 143);
+  transition: all .5s;
+}
+
+h4 a:hover {
+  text-decoration: none;
+  color: var(--color-gold);
+}
+
+.fa-download {
+  margin-right: 1rem;
 }
 
 p {
@@ -130,7 +148,7 @@ body {
 }
 
 main {
-  padding: 0 2rem 4rem 2rem; 
+  padding: 0 2rem 2rem 2rem; 
 }
 
 .top-icon {
@@ -147,7 +165,7 @@ main {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #000000d8;
+  background-color: #0000008e;
   position: absolute;
 }
 
@@ -320,6 +338,21 @@ section:not(:last-child) {
   width: 13rem;
   border-radius: 50rem;
   margin-bottom: 3rem;
+}
+
+.my-image {
+  position: relative;
+}
+
+.online-ststus {
+  background-color: rgb(12, 177, 12);
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 4rem;
+  right: 2rem;
 }
 
 .contact, .skill {
