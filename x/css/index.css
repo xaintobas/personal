@@ -544,7 +544,7 @@ img {
 .img1 {
   grid-column: 1 / 2;
   grid-row: 6 / 10 ;
-  background-image: url(/ecoffee/asset/Homeimg/img1.jpeg); 
+  background-image: url(../asset/Homeimg/img1.jpeg); 
   max-height: 13rem;
   height: 100%;
 }
@@ -552,7 +552,7 @@ img {
 .img2 {
   grid-column: 1/ 2;
   grid-row: 10 / 15;
-  background-image: url(/ecoffee/asset/Homeimg/img2.jpeg); 
+  background-image: url(../asset/Homeimg/img2.jpeg); 
   width: 100%;
   height: 15rem;
 }
@@ -560,7 +560,7 @@ img {
 .img3 {
   grid-column: 2/ 3;
   grid-row: 1 / 7;
-  background-image: url(/ecoffee/asset/Homeimg/img3.jpeg); 
+  background-image: url(../asset/Homeimg/img3.jpeg); 
   width: 100%;
   height: 11rem;
 }
@@ -568,7 +568,7 @@ img {
 .img4 {
   grid-column: 2 / 3;
   grid-row: 7 / 11;
-  background-image: url(/ecoffee/asset/Homeimg/img4.jpeg);
+  background-image: url(../asset/Homeimg/img4.jpeg);
   width: 100%;
   height: 11rem; 
 }
@@ -576,7 +576,7 @@ img {
 .img5 {
   grid-column: 2 / 3;
   grid-row: 11 / 16;
-  background-image: url(/ecoffee/asset/Homeimg/img5.jpeg); 
+  background-image: url(../asset/Homeimg/img5.jpeg); 
   width: 100%;
   height: 15rem;
 }
@@ -584,7 +584,7 @@ img {
 .img6 {
   grid-column: 3 / 4;
   grid-row: 4 / 8; 
-  background-image: url(/ecoffee/asset/Homeimg/img6.jpeg);
+  background-image: url(../asset/Homeimg/img6.jpeg);
   width: 100%;
   height: 12rem; 
 }
@@ -593,7 +593,7 @@ img {
   grid-column: 3 / 4;
   grid-row: 8 / 13;
   height: 15rem;
-  background-image: url(/ecoffee/asset/Homeimg/img7.jpeg); 
+  background-image: url(../asset/Homeimg/img7.jpeg); 
 } 
 
 .img1, .img2, .img3, .img4, .img5, .img6, .img7 {
@@ -616,7 +616,7 @@ img {
   .img1 {
     grid-column: 1 / 2;
     grid-row: 6 / 10 ;
-    background-image: url(/ecoffee/asset/Homeimg/img1.jpeg); 
+    background-image: url(../asset/Homeimg/img1.jpeg); 
     max-height: 32rem;
     height: 100%;
     background-position: center center;
@@ -625,7 +625,7 @@ img {
   .img2 {
     grid-column: 1/ 2;
     grid-row: 10 / 15;
-    background-image: url(/ecoffee/asset/Homeimg/img2.jpeg); 
+    background-image: url(../asset/Homeimg/img2.jpeg); 
     width: 100%;
     height: 39rem;
   }
@@ -633,7 +633,7 @@ img {
   .img3 {
     grid-column: 2/ 3;
     grid-row: 1 / 7;
-    background-image: url(/ecoffee/asset/Homeimg/img3.jpeg); 
+    background-image: url(.../asset/Homeimg/img3.jpeg); 
     width: 100%;
     height: 39rem;
   }
@@ -641,7 +641,7 @@ img {
   .img4 {
     grid-column: 2 / 3;
     grid-row: 7 / 11;
-    background-image: url(/ecoffee/asset/Homeimg/img4.jpeg);
+    background-image: url(../asset/Homeimg/img4.jpeg);
     width: 100%;
     height: 32rem; 
   }
@@ -649,7 +649,7 @@ img {
   .img5 {
     grid-column: 2 / 3;
     grid-row: 11 / 16;
-    background-image: url(/ecoffee/asset/Homeimg/img5.jpeg); 
+    background-image: url(../asset/Homeimg/img5.jpeg); 
     width: 100%;
     height: 39rem;
   }
@@ -657,7 +657,7 @@ img {
   .img6 {
     grid-column: 3 / 4;
     grid-row: 4 / 8; 
-    background-image: url(/ecoffee/asset/Homeimg/img6.jpeg);
+    background-image: url(../asset/Homeimg/img6.jpeg);
     width: 100%;
     height: 32rem; 
   }
@@ -666,7 +666,7 @@ img {
     grid-column: 3 / 4;
     grid-row: 8 / 13;
     height: 39rem;
-    background-image: url(/ecoffee/asset/Homeimg/img7.jpeg); 
+    background-image: url(../asset/Homeimg/img7.jpeg); 
   } 
 
   .img1, .img2, .img3, .img4, .img5, .img6, .img7 {
@@ -675,219 +675,12 @@ img {
     background-position: center center; 
   }
 }
-/* WITHOUT BG */
-/* 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(15, auto);
-  gap: .5rem;
-}
 
-.grid img {
-  height: fit-content;
-  background-size: cover;
-}
-
-.img1 {
-  grid-column: 1 / 2;
-  grid-row: 6 / 10 ;
-}
-
-.img2 {
-  grid-column: 1/ 2;
-  grid-row: 10 / 15;
-}
-
-.img3 {
-  grid-column: 2/ 3;
-  grid-row: 1 / 7;
-}
-
-.img4 {
-  grid-column: 2 / 3;
-  grid-row: 7 / 11;
-}
-
-.img5 {
-  grid-column: 2 / 3;
-  grid-row: 11 / 16;
-}
-
-.img6 {
-  grid-column: 3 / 4;
-  grid-row: 4 / 8; 
-}
-
-.img7 {
-  grid-column: 3 / 4;
-  grid-row: 8 / 13;
-  width: 100%;
-  height: 39rem;
-  background-image: url(/ecoffee/asset/Homeimg/img7.jpeg); 
-}  */
-
-/* 
-.grid {
-  display: grid;
-  gap: 1rem 1.5rem;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(3, auto);
-}
-
-.img1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2 ;
-  background-image: url(/ecoffee/asset/Homeimg/img1.jpeg); 
-  background-size: cover;
-  background-position-y: -1.5rem; 
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 32rem;
-  margin-top: 20rem;
-}
-
-.img2 {
-  grid-column: 1/ 2;
-  grid-row: 2 / 3;
-  background-image: url(/ecoffee/asset/Homeimg/img2.jpeg); 
-  background-size: cover;
-  background-position-y: -1.5rem; 
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 39rem;
-  margin-top: -4rem;
-}
-
-.img3 {
-  grid-column: 2/ 3;
-  grid-row: 1 / 2;
-  background-image: url(/ecoffee/asset/Homeimg/img3.jpeg); 
-  background-size: cover;
-  background-position-y: -1.5rem; 
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 39rem;
-}
-
-.img4 {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  background-image: url(/ecoffee/asset/Homeimg/img4.jpeg); 
-  background-size: cover;
-  background-position-y: -1.5rem; 
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 27rem;
-  margin-top: -17rem;
-}
-
-.img5 {
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
-  background-image: url(/ecoffee/asset/Homeimg/img5.jpeg); 
-  background-size: cover;
-  background-position-y: -3.5rem; 
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 39rem;
-  margin-top: -26rem;
-}
-
-.img6 {
-  grid-column: 3 / 4;
-  grid-row: 1 / 2;
-  background-image: url(/ecoffee/asset/Homeimg/img6.jpeg); 
-  background-size: contain;
-  background-position: center center; 
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 30rem;
-  margin-top: 25rem;
-}
-
-.img7 {
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-  background-image: url(/ecoffee/asset/Homeimg/img7.jpeg); 
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 39rem;
-  margin-top: -10rem;
-} */
-
-
-/* 
-.grid img {
-  
-  object-fit: fill;
-}
-
-.grid {
-  display: grid;
-  gap: 1rem 1.5rem;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, auto);
-}
-
-.img1 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3 ;
-  margin-top: -10rem; 
-  width: 100%;
-  height: 32rem;
-}
-
-.img2 {
-  grid-column: 1/ 2;
-  grid-row: 3 / 4;
-  margin-top: -10rem; 
-  width: 100%;
-  height: 39rem;
-}
-
-.img3 {
-  grid-column: 2/ 3;
-  grid-row: 1 / 2;
-  width: 100%;
-  height: 39rem;
-}
-
-.img4 {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  width: 100%;
-  height: 27rem;
-}
-
-.img5 {
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
-  width: 100%;
-  height: 39rem;
-}
-
-.img6 {
-  grid-column: 3 / 4;
-  grid-row: 2 / 3; 
-  width: 100%;
-  height: 30rem;
-}
-
-.img7 {
-  grid-column: 3 / 4;
-  grid-row: 3 / 4; 
-  height: 39rem; 
-  width: 100%;
-  height: 39rem;
-} */
 
 /* SECTON - CTA */
 
 .cta {
-  background-image: url(/ecoffee/asset/Homeimg/cta-bg.png);
+  background-image: url(../asset/Homeimg/cta-bg.png);
   background-size: cover;
   margin: 0 0 54rm 0;
   padding: 5rem 0;
