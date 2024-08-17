@@ -537,7 +537,6 @@ img {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(15, auto);
   gap: 1rem;
-  align-content: center;
 }
 
 
@@ -633,7 +632,7 @@ img {
   .img3 {
     grid-column: 2/ 3;
     grid-row: 1 / 7;
-    background-image: url(.../asset/Homeimg/img3.jpeg); 
+    background-image: url(../asset/Homeimg/img3.jpeg); 
     width: 100%;
     height: 39rem;
   }
