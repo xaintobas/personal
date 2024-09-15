@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+  /* VARIABLES */
+  --color-hero-bg: #def3d2;
+  --color-dark-green: #477978;
+  --color-light-green: #bee5d0;
+
+  --font-Marc: "Marcellus", serif;
+  --font-Anek: "Anek Telugu", sans-serif;
+  --font-Manrope: "Manrope", sans-serif;
+}
+
+*, 
+*::after, 
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.hidden {
+  display: none;
+}
+
+.fa-bars {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .overlay {
+    background-color: rgba(84, 61, 61, 0.698);
+    height: 0rem;
+    width: 100%;
+    position: absolute;
+    top: 3rem;
+    left: 0rem;
+    right: 0rem;
+    z-index: -1;
+    border-radius: 0 0 10rem 2rem;
+    transition: height .5s;
+  }
+
+  .fa-bars {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer; 
+  }
+
+  .menu-list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    flex-direction: column;
+    position: absolute;
+    top: -15rem;
+    left: 50%;
+    transform: translateX(-70%);
+    text-align: center;
+  }
+
+  .menu-btn {
+    position: absolute;
+    top: 25rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-size: 8rem;
+  color: var(--color-dark-green);
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  margin: 2rem 0;
+  max-width: 60%;
+  color: var(--color-dark-green);
+}
+
+li a {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-dark-green);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* BUTTONS */
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.menu-btn {
+  background-color: var(--color-dark-green);
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+}
+
+.start-btn {
+  background-color: var(--color-dark-green); 
+  padding: 1rem 2.5rem;
+  color: white;
+  border-radius: 1rem;
+}
+
+
+
+.hero-btns {
+  margin: 4rem 0;
+}
+
+.fa-play {
+  display: inline;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5rem;
+  margin: 0 .5rem 0 1rem;
+}
+
+/* LAYOUTS */
+
+body {
+  position: relative; 
+}
+
+header {
+  margin: 0 auto;
+  width: 70vw; 
+  position: absolute;
+  top: 2rem;
+  transform: translateX(50%);
+  right: 50%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-light-green);
+  padding: .4rem 3rem;
+  border-radius: 6rem;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.hero {
+  background-color: var(--color-hero-bg);
+  display: flex;
+  align-items: center;
+  height: 100vh; 
+}
+
+.hero-text, 
+.hero-img {
+  max-width: 50%;
+}
+
+.hero-flower {
+  width: 100%; 
+}
+
+.hero-text {
+  margin-left: 7rem;
+}
+
+.hero-img {
+  align-self: flex-end;
+}
+/* TYPOGRAPHY */
+
+/* LAYOUTS */

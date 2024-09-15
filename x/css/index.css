@@ -19,7 +19,6 @@
   --color-meal-name: #5B5B5B;
   --color-meal-price: #BF9016;
   --color-cta-bg: #352807;
-
   --font-Marc: "Marcellus", serif;
   --font-Anek: "Anek Telugu", sans-serif;
   --font-Manrope: "Manrope", sans-serif;
@@ -37,6 +36,10 @@ html {
 }
 
 /* TYPOGRAPHY */
+
+.hero-heading {
+  text-shadow: .6rem 1px rgb(224, 222, 222);
+}
 
 h1 {
   font-size: 4rem;
@@ -73,6 +76,22 @@ p {
 }
 
 @media screen and (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+    text-align: left;
+  }
+  
+  h2 {
+    font-size: 4.4rem;
+  }
+  
+  p {
+    font-size: 2rem;
+  }
+}
+
+
+@media screen and (min-width: 900px) {
   h1 {
     font-size: 9rem;
     text-align: left;
@@ -113,6 +132,34 @@ p {
   font-family: var(--font-Manrope);
   font-size: 1.5rem;
 }
+
+/* NAVIGATION MENU */
+
+nav {
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.menu-items {
+  background-color: rgba(245, 245, 220, 0);
+}
+
+.menu-items, 
+.logo, 
+.mobile-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links {
+  display: none;
+}
+
+.menu-items {
+  padding: 1rem 2rem;
+}
+
+
 
 /* SECTON - CONTAINER */
 
@@ -231,8 +278,6 @@ img {
   }
 
   .hero {
-    /* background-color: rgb(253, 242, 242);
-    padding: 6rem 1.2rem 8rem 1.2rem; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -272,7 +317,6 @@ img {
     width: 30rem;
     transform: rotate(0deg);
   }
-
   
   .cofee-cup-img {
     width: 30rem;
@@ -287,9 +331,7 @@ img {
     transform: scale(1.7) rotate(1deg);
     left: -2.3rem;
     top: -16rem;
-  }
-
-  
+  }  
 }
 
 /* SECTON - OUR STORY */
@@ -352,6 +394,7 @@ img {
     transform: rotate(102deg) scale(2);
   }
 }
+
 /* SECTON -  OUR MEALS*/
 
 .meals2{
@@ -468,6 +511,7 @@ img {
 .review {
   position: relative;
   overflow: hidden; 
+  width: 100%;
 }
 
 .review-top-right,
@@ -488,7 +532,32 @@ img {
   bottom: -3rem;
 }
 
+.review-nav{
+  display: none;
+}
+
 @media screen and (min-width:768px) { 
+
+  .review-nav {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin: -1rem 0 5rem 0;
+  }
+
+  .review-nav img {
+    width: 2rem;
+  }
+
+  .review {
+    display: flex;
+    justify-content: center;
+  }
+
+  .review-group{
+    max-width: 110rem;
+  }
+
   .review-coll {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -497,6 +566,7 @@ img {
 
   .review-card {
     height: 100%;
+    max-width: 55rem;
   }
 
   .review-card p {
@@ -505,9 +575,6 @@ img {
 
   .review-top-right {
     width: 25rem;
-    /* right: -5rem;
-    top: -10rem;
-    transform: rotate(-45deg); */
   }
   
   .review-bottom-left {
@@ -525,11 +592,6 @@ img {
 
 .gallery {
   background-color: #F5F2EB;
-  display: grid;
-  align-items: center;
-}
-
-.gallery-img {
 }
 
 .grid {
@@ -537,8 +599,9 @@ img {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(15, auto);
   gap: 1rem;
+  margin: 0 auto;
+  max-width: 110rem;
 }
-
 
 .img1 {
   grid-column: 1 / 2;
@@ -603,69 +666,38 @@ img {
 
 @media screen and (min-width:768px) {
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(15, auto);
-    gap: 1rem;
-    align-content: center;
-  }
-
-
   .img1 {
-    grid-column: 1 / 2;
-    grid-row: 6 / 10 ;
-    background-image: url(../asset/Homeimg/img1.jpeg); 
     max-height: 32rem;
     height: 100%;
-    background-position: center center;
   }
 
-  .img2 {
-    grid-column: 1/ 2;
-    grid-row: 10 / 15;
-    background-image: url(../asset/Homeimg/img2.jpeg); 
+  .img2 { 
     width: 100%;
     height: 39rem;
   }
 
   .img3 {
-    grid-column: 2/ 3;
-    grid-row: 1 / 7;
-    background-image: url(../asset/Homeimg/img3.jpeg); 
     width: 100%;
     height: 39rem;
   }
 
   .img4 {
-    grid-column: 2 / 3;
-    grid-row: 7 / 11;
-    background-image: url(../asset/Homeimg/img4.jpeg);
     width: 100%;
     height: 32rem; 
   }
 
   .img5 {
-    grid-column: 2 / 3;
-    grid-row: 11 / 16;
-    background-image: url(../asset/Homeimg/img5.jpeg); 
     width: 100%;
     height: 39rem;
   }
 
   .img6 {
-    grid-column: 3 / 4;
-    grid-row: 4 / 8; 
-    background-image: url(../asset/Homeimg/img6.jpeg);
     width: 100%;
     height: 32rem; 
   }
 
   .img7 {
-    grid-column: 3 / 4;
-    grid-row: 8 / 13;
     height: 39rem;
-    background-image: url(../asset/Homeimg/img7.jpeg); 
   } 
 
   .img1, .img2, .img3, .img4, .img5, .img6, .img7 {

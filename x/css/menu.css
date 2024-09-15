@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+  /* VARIABLES */
+  --color-white: #FFFFFF;
+  --color-discount: #FDC432;
+  --color-hero-heading: #CE733F;
+  --color-brown-btn: #54400E;
+  --color-hero-heading-border: #C3B677;
+  --color-hero-bg: - #FFF9F1;
+  --color-grids-bg:- #E8E0CA;
+  --color-meals-bg:#F5F2EB;
+  --color-meals-img-bg:#E8E0CA;
+  --color-products-bg:  - #F5F2EB;
+  --color-product-img-bg: #E8E0CA;
+  --color-testimonial-bg: #E8E0CA;
+  --color-meal-name: #5B5B5B;
+  --color-meal-price: #BF9016;
+  --color-cta-bg: #352807;
+  --font-Marc: "Marcellus", serif;
+  --font-Anek: "Anek Telugu", sans-serif;
+  --font-Manrope: "Manrope", sans-serif;
+}
+
+*, 
+*::after, 
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
