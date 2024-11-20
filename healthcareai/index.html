@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <!-- Navbar -->
+      <div class="container nav-container">
+        <nav class="navbar d-flex">
+          <div class="logo header-logo">
+            <a href=""><i class="fa-solid fa-stethoscope"></i>HealthCareAI.</a>
+          </div>
+          <ul class="nav-links d-flex">
+            <li class="nav-item active"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="doctors.html">All Doctors</a></li>
+            <li class="nav-item"><a href="about.html">About Us</a></li>
+            <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+          </ul>
+
+          <a href="login.html" class="btn btn-small btn-blue">My Account</a>
+
+          <button id="hamburger" class="hamburger">☰</button>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="mobile-menu hidden">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="doctors.html">All Doctors</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="login.html">My Account</a></li>
+        </ul>
+        <button id="closeMenu" class="hamburger closeMenu">X</button>
+      </div>
+
+      <div id="overlay" class="overlay"></div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-container d-flex">
+        <div class="hero-text">
+          <h1>Your 24/7 Health Assistant</h1>
+          <div class="hero-description">
+            <p>
+              Get instant medical guidance and book appointments with qualified
+              healthcare professionals.
+            </p>
+          </div>
+          <a href="#chat" class="btn btn-small btn-white">Start Chat Now</a>
+        </div>
+        <img src="bot.png" class="hero-img" />
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <h2>Why Choose HealthCareAI?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <i class="fas fa-robot"></i>
+            <h3>AI-Powered Assistance</h3>
+            <p>
+              Get instant responses to your health queries anytime, anywhere.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-user-md"></i>
+            <h3>Expert Doctors</h3>
+            <p>Connect with qualified healthcare professionals when needed.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-calendar-check"></i>
+            <h3>Easy Booking</h3>
+            <p>Schedule appointments seamlessly through our platform.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-lock"></i>
+            <h3>Secure & Private</h3>
+            <p>
+              Your health information is protected with enterprise-grade
+              security.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+      <div class="container">
+        <h2>How It Works</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Start Chat</h3>
+            <p>
+              Begin a conversation with our AI assistant about your health
+              concerns.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Get Guidance</h3>
+            <p>Receive initial assessment and medical guidance from our AI.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Book Appointment</h3>
+            <p>If needed, schedule an appointment with a qualified doctor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="chat" class="chat-section">
+      <div class="container chating">
+        <h2>Chat with Our AI Assistant</h2>
+        <div class="chat-container">
+          <div class="chat-messages" id="chatMessages">
+            <div class="message ai">
+              Hello! I'm your healthcare assistant. How can I help you today?
+            </div>
+          </div>
+          <div class="chat-input">
+            <input
+              type="text"
+              id="userInput"
+              placeholder="Type your health concern..."
+            />
+            <button id="sendButton">Send</button>
+          </div>
+        </div>
+        <!-- <div class="booking-form" id="bookingForm" style="display: none">
+          <h2>Book an Appointment</h2>
+          <form id="appointmentForm">
+            <div class="form-group">
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" required />
+            </div>
+            <div class="form-group">
+              <label for="date">Preferred Date:</label>
+              <input type="date" id="date" required />
+            </div>
+            <div class="form-group">
+              <label for="time">Preferred Time:</label>
+              <input type="time" id="time" required />
+            </div>
+            <div class="form-group">
+              <label for="symptoms">Brief Description of Symptoms:</label>
+              <textarea id="symptoms" required></textarea>
+            </div>
+            <button type="submit">Book Appointment</button>
+          </form>
+        </div> -->
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <div class="logo footer-logo">
+            <a href=""><i class="fa-solid fa-stethoscope"></i>HealthCareAI.</a>
+          </div>
+          <p class="footer-desc">
+            We are your trusted partner in managing your healthcare needs
+            conveniently and efficiently. We understand the challenges
+            individuals face when it comes to scheduling doctor appointments and
+            managing their health records.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>1st Street, Sapele RD. Benin City, Edo State</p>
+          <p>Phone: <a href="tel+:234">+234 XXX XXX XXXX</a></p>
+          <p>
+            Email:
+            <a href="mailto:admin@ecobenin.com">admin@ecobenin.com</a>
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">All Doctors</a></li>
+            <li><a href="#">My Appointments</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Newsletter</h4>
+          <p class="footer-desc">
+            Stay updated with our latest initiatives and impact.
+          </p>
+          <form action="#">
+            <input type="email" placeholder="Your email" />
+            <button type="submit">&#x27A4;</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="attribution">&copy; 2024 All Rights Reserved</div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <!-- Navbar -->
+      <div class="container nav-container">
+        <nav class="navbar d-flex">
+          <div class="logo header-logo">
+            <a href=""><i class="fa-solid fa-stethoscope"></i>HealthCareAI.</a>
+          </div>
+          <ul class="nav-links d-flex">
+            <li class="nav-item active"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="doctors.html">All Doctors</a></li>
+            <li class="nav-item"><a href="about.html">About Us</a></li>
+            <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+          </ul>
+
+          <a href="login.html" class="btn btn-small btn-blue">My Account</a>
+
+          <button id="hamburger" class="hamburger">☰</button>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="mobile-menu hidden">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="doctors.html">All Doctors</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="login.html">My Account</a></li>
+        </ul>
+        <button id="closeMenu" class="hamburger closeMenu">X</button>
+      </div>
+
+      <div id="overlay" class="overlay"></div>
+    </header>
+
+    <!-- BEGIN BANNER SECTION-->
+    <section class="page-banner">
+      <div class="page-banner-container">
+        <h2>About Us</h2>
+        <p>
+          We are your trusted partner in managing your healthcare needs
+          conveniently and efficiently.
+        </p>
+        <span class="breadcrumb"><a href="index.html">Home</a> > About Us</span>
+      </div>
+    </section>
+
+    <section class="section about-us">
+      <div class="container d-flex about-us-container">
+        <div class="about-us-text">
+          <p>About Us</p>
+          <h2>Health Professionals</h2>
+          <p>
+            We are your trusted partner in managing your healthcare needs
+            conveniently and efficiently. We understand the challenges
+            individuals face when it comes to scheduling doctor appointments and
+            managing their health records. We are committed to excellence in
+            healthcare technology. We continuously strive to enhance our
+            platform, integrating the latest advancements to improve user
+            experience and deliver superior service. Whether you're booking your
+            first appointment or managing ongoing care, Prescripto is here to
+            support you every step of the way.
+          </p>
+        </div>
+        <img src="img/doc5.png" alt="" />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <div class="logo footer-logo">
+            <a href=""><i class="fa-solid fa-stethoscope"></i>HealthCareAI.</a>
+          </div>
+          <p class="footer-desc">
+            We are your trusted partner in managing your healthcare needs
+            conveniently and efficiently. We understand the challenges
+            individuals face when it comes to scheduling doctor appointments and
+            managing their health records.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>1st Street, Sapele RD. Benin City, Edo State</p>
+          <p>Phone: <a href="tel+:234">+234 XXX XXX XXXX</a></p>
+          <p>
+            Email:
+            <a href="mailto:admin@ecobenin.com">admin@ecobenin.com</a>
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">All Doctors</a></li>
+            <li><a href="#">My Appointments</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Newsletter</h4>
+          <p class="footer-desc">
+            Stay updated with our latest initiatives and impact.
+          </p>
+          <form action="#">
+            <input type="email" placeholder="Your email" />
+            <button type="submit">&#x27A4;</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="attribution">&copy; 2024 All Rights Reserved</div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
